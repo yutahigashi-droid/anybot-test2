@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anybot 訪問計測テストページ (Site 2)</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M87D3N4B');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: #f0f4f8;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 60px 24px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 48px 40px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      border-top: 4px solid #2563eb;
+    }
+    .site-badge {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: "SF Mono", Monaco, monospace;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+    .subtitle {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 32px;
+      font-family: "SF Mono", Monaco, monospace;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #eee;
+    }
+    p { margin-bottom: 12px; color: #444; font-size: 14px; }
+    .status {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: "SF Mono", Monaco, monospace;
+      margin-bottom: 24px;
+    }
+    code {
+      background: #f0f0f3;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 13px;
+      font-family: "SF Mono", Monaco, monospace;
+    }
+    .test-btn {
+      margin-top: 16px;
+      margin-right: 8px;
+      padding: 10px 20px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .test-btn:hover { background: #1d4ed8; }
+    .link-btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #2563eb;
+      border: 1px solid #2563eb;
+      border-radius: 4px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .link-btn:hover { background: #f0f4f8; }
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M87D3N4B"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+    <span class="site-badge">SITE 2</span>
+    <h1>anybot 訪問計測テストページ</h1>
+    <div class="subtitle">visit tracking test environment</div>
+    <span class="status">● GTM-M87D3N4B connected</span>
+
+    <h2>このページについて</h2>
+    <p>
+      訪問計測タグの検証用環境です。
+      Site 1（<code>anybot-test</code>）と同じGTMコンテナ <code>GTM-M87D3N4B</code> を使用しています。
+    </p>
+
+    <h2>動作確認用</h2>
+    <p>
+      訪問計測タグはページ表示時に自動で発火します。
+      任意のカスタムイベントを発火させたい場合は下のボタンを使用してください。
+    </p>
+    <button class="test-btn" onclick="dataLayer.push({event: 'site2_test_event'});">
+      site2_test_event を発火
+    </button>
+
+    <h2>関連リンク</h2>
+    <p>
+      <a class="link-btn" href="https://yutahigashi-droid.github.io/anybot-test/">
+        ← Site 1 (popup検証) に戻る
+      </a>
+    </p>
+  </div>
+
+</body>
+</html>
